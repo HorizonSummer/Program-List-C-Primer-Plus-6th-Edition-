@@ -1,7 +1,8 @@
 #include <iostream>
-#include <cmath>
+#include <cmath>         //or math.h
+
 int main(){
-     //ormath.h
+     
     using namespace std; 
     
     double area;
@@ -12,4 +13,5 @@ int main(){
     cout <<"That's the equivalent of a sgquare " << side
          << " feet to the side." << endl;
     cout<<"How fascinating!"<<endl;
+    return 0;
 }

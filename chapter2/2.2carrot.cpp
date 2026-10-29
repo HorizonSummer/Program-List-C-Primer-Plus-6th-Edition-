@@ -1,11 +1,14 @@
 #include <iostream>
 int main(){
     using namespace std;
+
     int carrots = 25;
-    cout << "i have " ;
-    cout << carrots << " carrots.";
+
+    cout << "i have ";
+    cout << carrots;
+    cout << " carrots.";
     cout << endl;
-    cout << "you won't regret it!";
-    cout << endl;
+    carrots = carrots - 1;
+    cout << "Crunch, crunch. Now I have " << carrots << " carrots."<< endl;
     return 0;
 }
