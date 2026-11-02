@@ -1,0 +1,34 @@
+# clang-format 配置：C++ Primer Plus 6th Edition 练习代码风格
+#
+# 用法（VS Code）：Shift+Alt+F 格式化当前文件
+# 影响范围：本文件所在目录及其所有子目录（chapter2、chapter3 ...）
+#
+# 参考：https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+BasedOnStyle: LLVM
+
+# 缩进 4 个空格（书里的风格）
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# 每行最多 80 列，超了才换行
+ColumnLimit: 80
+
+# 大括号独占一行（Allman 风格，与书里一致）
+BreakBeforeBraces: Allman
+
+# 二元运算符换行时，运算符放在行首（<< 对齐到上一行的 <<）
+BreakBeforeBinaryOperators: All
+
+# 短语句可以合并到一行，例如 sam = sue = 0;
+AllowShortFunctionsOnASingleLine: Empty
+
+# 不要在 include 之间乱加空行
+SortIncludes: false
+
+# 保持指针星号靠类型：int* p;
+PointerAlignment: Left
+
+# 文件末尾保留一个换行
+InsertNewlineAtEOF: true
